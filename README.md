@@ -1,27 +1,28 @@
 # AppStore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+Este projeto está na versão 17 do angular, algumas informações de ambiente estão descritas abaixo:
 
-## Development server
+Angular CLI: 17.3.8
+Node: 20.11.0
+Package Manager: npm 10.2.4
+OS: win32 x64
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Como rodar o projeto
 
-## Code scaffolding
+Primeiro instalar as dependências do projeto usando:
+npm i
+comando que deve ser executado dentro da pasta do projeto e no prompt de comando,
+ou terminal equivalente.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O projeto pode ser iniciado usando o comando:
+ng serve
 
-## Build
+### json-server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Foi usado o json-server para simular o backend o comando para iniciar o json-server é:
+npx json-server db.json
 
-## Running unit tests
+com isso podemos obter acesso aos dados do products.json através da url abaixo:
+http://localhost:3000/products
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+permitindo realizar requisições http no angular para o backend que poderia ser qualquer stack.
