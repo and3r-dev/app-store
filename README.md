@@ -11,7 +11,7 @@ OS: win32 x64
 
 Primeiro instalar as dependências do projeto usando:
 npm i
-comando que deve ser executado dentro da pasta do projeto e no prompt de comando,
+esse comando que deve ser executado dentro da pasta do projeto e no prompt de comando,
 ou terminal equivalente.
 
 O projeto pode ser iniciado usando o comando:
@@ -31,3 +31,5 @@ permitindo realizar requisições http no angular para o backend que poderia ser
 
 https://www.npmjs.com/package/json-server
 https://www.npmjs.com/package/bootstrap/v/5.0.1
+https://github.com/sweetalert2/ngx-sweetalert2
+https://www.npmjs.com/package/ngx-toastr

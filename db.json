@@ -5,40 +5,46 @@
       "detail": "Lorem ipsum dolor sit amet",
       "price": "99",
       "hero": "OMG This just came out today!",
-      "image": "http://placehold.it/940x300/999/CCC"
+      "image": "http://placehold.it/940x300/999/CCC",
+      "id": "8dfc"
     },
     {
       "name": "Product 1",
       "detail": "Lorem ipsum dolor sit amet",
       "price": "99",
       "info": "This is the latest and greatest product from Derp corp.",
-      "image": "http://placehold.it/300x300/999/CCC"
+      "image": "http://placehold.it/300x300/999/CCC",
+      "id": "6256"
     },
     {
       "name": "Product 2",
       "detail": "Lorem ipsum dolor sit amet",
       "price": "99",
       "offer": "BOGOF",
-      "image": "http://placehold.it/300x300/999/CCC"
+      "image": "http://placehold.it/300x300/999/CCC",
+      "id": "a63f"
     },
     {
       "name": "Product 3",
       "detail": "Lorem ipsum dolor sit amet",
       "price": "99",
-      "image": "http://placehold.it/300x300/999/CCC"
+      "image": "http://placehold.it/300x300/999/CCC",
+      "id": "8813"
     },
     {
       "name": "Product 4",
       "detail": "Lorem ipsum dolor sit amet",
       "price": "99",
       "offer": "No srsly GTFO",
-      "image": "http://placehold.it/300x300/999/CCC"
+      "image": "http://placehold.it/300x300/999/CCC",
+      "id": "e23d"
     },
     {
       "name": "Product 5",
       "detail": "Lorem ipsum dolor sit amet",
       "price": "99",
-      "image": "http://placehold.it/300x300/999/CCC"
+      "image": "http://placehold.it/300x300/999/CCC",
+      "id": "a704"
     },
     {
       "name": "Product 6",
@@ -46,16 +52,29 @@
       "price": "99",
       "info": "This is the latest and greatest product from Derp corp.",
       "offer": "info with offer",
-      "image": "http://placehold.it/300x300/999/CCC"
+      "image": "http://placehold.it/300x300/999/CCC",
+      "id": "4b33"
     }
   ],
   "shopping-cart": [
     {
-      "id": "3c72",
+      "name": "hero Product",
+      "detail": "Lorem ipsum dolor sit amet",
+      "price": "99",
+      "hero": "OMG This just came out today!",
+      "image": "http://placehold.it/940x300/999/CCC",
+      "id": "8dfc",
+      "amount": 2,
+      "subtotal": 198
+    },
+    {
+      "id": "8813",
       "name": "Product 3",
       "detail": "Lorem ipsum dolor sit amet",
       "price": "99",
-      "image": "http://placehold.it/300x300/999/CCC"
+      "image": "http://placehold.it/300x300/999/CCC",
+      "amount": 1,
+      "subtotal": 99
     }
   ]
 }
