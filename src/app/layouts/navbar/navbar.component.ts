@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Products } from '../../interfaces/products';
 import { ProductsService } from '../../services/products/products.service';
 import { Observable, Subscription } from 'rxjs';
@@ -8,7 +8,7 @@ import { Observable, Subscription } from 'rxjs';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent implements OnInit, AfterViewInit, OnDestroy {
+export class NavbarComponent implements OnInit, OnDestroy {
   productCart$: Observable<Products[]>;
   products: Products[];
   productCount: number = 0;
@@ -20,28 +20,14 @@ export class NavbarComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(private _productsService: ProductsService) {}
 
   ngOnInit(): void {
+    this.getProductsCart();
     this.subscription = this._productsService.getCart().subscribe(products => {
-      this.productCount = products.length;
-      this.updateDataCountAttribute();
+      this.productCount = this.productCount > products.length ? this.productCount + products.length : products.length;
     });
-
-    if (this.productCount == 0) {
-      this.getProductsCart();
-    }
-  }
-
-  ngAfterViewInit() {
-    this.updateDataCountAttribute();
   }
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
-  }
-
-  updateDataCountAttribute() {
-    if (this.countElement) {
-      this.countElement.nativeElement.setAttribute('data-count', this.productCount.toString());
-    }
   }
 
   getProductsCart() {
