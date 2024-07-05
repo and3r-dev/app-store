@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import { StartComponent } from './pages/start/start.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductComponent } from './pages/product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     provideClientHydration()

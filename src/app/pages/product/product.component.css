@@ -1,0 +1,75 @@
+.thumb-wrapper {
+  padding: 25px 15px;
+  background: #fff;
+  border-radius: 6px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  height: 450px;
+}
+
+.img-box {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.thumb-content .btn {
+  color: #0275d8;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #0275d8;
+  padding: 6px 14px;
+  margin-top: 5px;
+  line-height: 16px;
+  border-radius: 20px;
+}
+
+.thumb-content .botao {
+  color: #747d89;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #747d89;
+  padding: 6px 14px;
+  margin-top: 5px;
+  line-height: 16px;
+  border-radius: 20px;
+}
+
+.thumb-content .btn:hover, .thumb-content .btn:focus {
+  color: #fff;
+  background: #0275d8;
+  box-shadow: none;
+}
+
+.thumb-content .btn i {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.star-rating li {
+  padding: 0;
+}
+
+.star-rating i {
+  font-size: 14px;
+  color: #ffc000;
+}
+
+.btn-custom-green {
+  background: #747d89;
+}

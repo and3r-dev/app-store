@@ -1,0 +1,24 @@
+<div class="col-ms-4">
+  <div class="thumb-wrapper">
+    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+    <div class="img-box">
+      <img [src]="product.image" class="img-fluid" alt="">
+    </div>
+    <div class="thumb-content">
+      <h4>{{product.name}}</h4>
+      <div class="star-rating">
+        <ul class="list-inline">
+          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+        </ul>
+      </div>
+      <p class="item-price">$400.00 <b>${{product.price}}</b></p>
+      <p>{{product.detail}}</p>
+      <button (click)="adicionar()" class="btn">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+</div>
+<br>
