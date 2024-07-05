@@ -26,3 +26,8 @@ com isso podemos obter acesso aos dados do products.json através da url abaixo:
 http://localhost:3000/products
 
 permitindo realizar requisições http no angular para o backend que poderia ser qualquer stack.
+
+#### LIBS INSTALADAS
+
+https://www.npmjs.com/package/json-server
+https://www.npmjs.com/package/bootstrap/v/5.0.1
