@@ -57,24 +57,5 @@
     }
   ],
   "shopping-cart": [
-    {
-      "name": "hero Product",
-      "detail": "Lorem ipsum dolor sit amet",
-      "price": "99",
-      "hero": "OMG This just came out today!",
-      "image": "http://placehold.it/940x300/999/CCC",
-      "id": "8dfc",
-      "amount": 2,
-      "subtotal": 198
-    },
-    {
-      "id": "8813",
-      "name": "Product 3",
-      "detail": "Lorem ipsum dolor sit amet",
-      "price": "99",
-      "image": "http://placehold.it/300x300/999/CCC",
-      "amount": 1,
-      "subtotal": 99
-    }
   ]
 }

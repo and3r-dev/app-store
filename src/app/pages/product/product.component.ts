@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ProductsService } from '../../services/products/products.service';
 import { BuyTable } from '../../interfaces/buy-table';
 import { ToastrService } from 'ngx-toastr';
@@ -8,7 +8,7 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })
-export class ProductComponent {
+export class ProductComponent implements OnInit{
   productsCart: BuyTable[] = [];
   countProducts: number = 0;
 
@@ -18,6 +18,10 @@ export class ProductComponent {
     private _productsService: ProductsService,
     private toastr: ToastrService
   ) { }
+
+  ngOnInit(): void {
+      this.getProductsCart();
+  }
 
   adicionar() {
     let updatedItem = false;
@@ -50,7 +54,7 @@ export class ProductComponent {
       complete: () => {
         this._productsService.setCart(this.product);
         this.productsCart.push(this.product);
-        this.countProducts++;
+        this.countProducts += 1;
         this.toastr.success('Adicionado ao carrinho!', 'Novo Item.');
       }
     });
